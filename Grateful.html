@@ -1,0 +1,73 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Special Message</title>  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f5f5f5;
+      font-family: Arial, sans-serif;
+    }
+
+    .box {
+      padding: 20px 30px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      cursor: pointer;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    }
+
+    .message {
+      display: none;
+      max-width: 400px;
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    p {
+      line-height: 1.6;
+      color: #555;
+    }
+  </style></head><body>
+  <div class="box" id="openBox">
+    I have a message for you sir.<br />
+    Please click this box to view the message.
+  </div>  <div class="message" id="messageBox">
+    <h1>Thank you big daddy</h1>
+    <p>
+      Thank you very much sir for the monthly upkeep, I really appreciate it sir, 
+      the money have really saved me from a lot and helped me do many things, 
+      I'm so grateful for it sir. God bless you and enrich your finance sir.<br /><br />
+      Thank you sir, I love you sir.
+    </p>
+  </div>  <script>
+    const openBox = document.getElementById("openBox");
+    const messageBox = document.getElementById("messageBox");
+
+    openBox.addEventListener("click", () => {
+      openBox.style.display = "none";
+      messageBox.style.display = "block";
+    });
+  </script></body>
+</html>
